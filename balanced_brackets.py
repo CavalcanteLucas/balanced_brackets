@@ -36,7 +36,7 @@ def isCloser(character):
 def isBalanced(brackets):
     pilha = deque()
 
-    for element in enumerate(brackets):
+    for element in brackets:
         if isCloser(element):
             if not len(pilha):
                 return 'NO'  # Caracter de fechar com pilha vazia
